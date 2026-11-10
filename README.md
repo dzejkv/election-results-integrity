@@ -1,5 +1,8 @@
 # Election Results Integrity
 
+[![CI](https://github.com/dzejkv/election-results-integrity/actions/workflows/ci.yml/badge.svg)](https://github.com/dzejkv/election-results-integrity/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A small, end-to-end election-results system designed around one question:
 **how do you get numbers from polling stations to a public dashboard so that
 nobody can change them along the way without it being noticed?**
@@ -7,6 +10,8 @@ nobody can change them along the way without it being noticed?**
 > **Everything here is fictional.** The election, stations, candidates, voters and
 > devices are made up. No real election data, software, documents or procedures
 > from any organisation are used.
+
+![Public dashboard: four stations reported, one held for review, audit chain valid](docs/images/dashboard.png)
 
 ## What it does
 
