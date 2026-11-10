@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Results Dashboard</title>
+  <link rel="stylesheet" href="/static/dashboard.css">
+  <script src="/static/dashboard.js" defer></script>
+</head>
+<body>
+  <div class="banner">Fictional demo data. Not a real election.</div>
+  <main>
+    <header>
+      <h1 id="election-name">Loading…</h1>
+      <p class="muted"><span id="election-id"></span> · updated <span id="updated">–</span></p>
+    </header>
+
+    <section class="stats" aria-label="Summary">
+      <div class="stat"><span class="label">Stations reporting</span><span class="value" id="reporting">–</span></div>
+      <div class="stat"><span class="label">Ballots cast</span><span class="value" id="ballots">–</span></div>
+      <div class="stat"><span class="label">Invalid ballots</span><span class="value" id="invalid">–</span></div>
+      <div class="stat"><span class="label">Under review</span><span class="value" id="review">–</span></div>
+    </section>
+
+    <section aria-labelledby="results-h">
+      <h2 id="results-h">Results</h2>
+      <div id="candidates" class="candidates"></div>
+    </section>
+
+    <section aria-labelledby="stations-h">
+      <h2 id="stations-h">Polling stations</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Station</th><th>Name</th><th class="num">Registered</th><th>Status</th></tr></thead>
+          <tbody id="stations"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="audit-h" class="audit">
+      <h2 id="audit-h">Audit log checkpoint</h2>
+      <p class="muted">Write this down. Anyone can later check the log has not been rewritten with
+        <code>eri-audit verify --expect-head &lt;hash&gt;</code>.</p>
+      <p><span id="audit-status" class="pill">–</span> <span id="audit-entries"></span> entries</p>
+      <code id="audit-head" class="hash">–</code>
+    </section>
+  </main>
+</body>
+</html>

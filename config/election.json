@@ -1,0 +1,12 @@
+{
+  "election_id": "FICT-2026-MUNI",
+  "name": "Fictional Municipal Election 2026 (demo data only)",
+  "candidates": ["Aster Party", "Birch Alliance", "Cedar Movement", "Dune Independents"],
+  "stations": {
+    "ST-001": { "name": "North Primary School", "registered_voters": 820 },
+    "ST-002": { "name": "Riverside Library", "registered_voters": 640 },
+    "ST-003": { "name": "Old Town Hall", "registered_voters": 1150 },
+    "ST-004": { "name": "Hillcrest Community Centre", "registered_voters": 730 },
+    "ST-005": { "name": "Harbour Sports Hall", "registered_voters": 905 }
+  }
+}

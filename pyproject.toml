@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "election-results-integrity"
+version = "0.1.0"
+description = "A fictional, end-to-end election-results pipeline focused on integrity: signed submissions, reconciliation, a tamper-evident audit log and a public dashboard."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "dzejkv" }]
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "cryptography>=42",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+eri-scanner = "eri.scanner:main"
+eri-audit = "eri.audit:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+eri = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

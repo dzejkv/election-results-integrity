@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
+
+# Runtime data and secrets: never commit these
+data/
+demo-data/
+keys/
+*.pem
+*.db
+*.db-wal
+*.db-shm
+config/devices.json
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
